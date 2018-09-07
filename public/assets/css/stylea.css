@@ -1,0 +1,77 @@
+.drink {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    background-image: url("../images/drinkHP.jpg");
+    height: 300px;
+    border-radius: 10px;
+}
+.snack {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    background-image: url("../images/snackHP.jpg");
+    height: 300px;
+    border-radius: 10px;
+}
+.jumbotron {
+  background-color: #8fd394;
+
+}
+.salud {
+    color: rgb(47, 144, 173);
+    font-family: 'Bungee Shade', cursive;
+    font-size: 100px;
+
+}
+.lead {
+    color: rgb(47, 144, 173);
+    font-family: 'Bungee Shade', cursive;
+    font-size: 35px;
+}
+.container {
+    color: rgb(47, 144, 173);
+    font-family: 'Bungee Shade', cursive;
+    font-size: 30px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(47, 144, 173);
+    color: white;
+    text-align: center;
+    height: 50px;
+ }
+
+.nav-link {
+    color: blue;
+}
+.form-control {
+    font-family: 'Arial', sans-serif;
+
+}
+
+ body {
+    background-color: rgb(47, 144, 173);
+ }
+ 
+ @media only screen and (max-width: 640px) {
+	#masthead {
+	 
+	  position: static;
+	  margin-bottom: 20px;
+	}
+  
+	header .container {
+	  padding: 0;
+	}
+  
+	main.container {
+	  padding-top: 0;
+}
+
+ }

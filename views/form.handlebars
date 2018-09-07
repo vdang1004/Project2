@@ -1,0 +1,195 @@
+
+<div class="container-fluid">
+<!--JUMBOTRON HEADER-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Got Something to Add?</h1>
+    <p class="lead">Share your recipes, ratings or thoughts here!</p>
+  </div>
+</div>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/alldrinks">Drinks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/allsnacks">Snacks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/form">B.Y.O...</a>
+  </li>
+</ul>
+<br>
+
+
+<!--ROW ONE
+<form>
+    <div class="form-row align-items-center">
+        
+      <div class="col-sm-3 my-1">
+          <label for="inlineFormInputName">Name</label>
+          <label class="sr-only" for="inlineFormInputName">Name</label>
+          <input type="text" class="form-control" id="inlineFormInputName" placeholder="J. Doe">
+      </div>
+
+      
+      <div class="col-sm-3 my-1">
+          <label for="inlineFormInputUsername">Username</label>
+          <label class="sr-only" for="inlineFormInputGroupUsername">JDoe</label>
+          <div class="input-group">
+              <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+          </div>
+      </div>
+
+
+      <div class="col-auto my-1">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+              <label class="form-check-label" for="autoSizingCheck2">
+                Remember me
+              </label>
+              </div>
+      </div>
+    </div>
+</form>-->
+
+      
+      
+
+
+<!--DROPDOWN ONE SELECTION-->
+<div id="ddOne">
+<select class="custom-select" id="dd1">
+    <option selected>Select One</option>
+    <option value="ddDrink">Add a Drink</option>
+    <option value="ddSnack">Add a Snack</option>
+    <option value="ddThoughts">Share Your Thoughts!</option>
+</select>
+<br>
+</div>
+
+      
+
+
+<div class="container" id="formDrink">
+    <br>
+	<div class="row">
+		<div class="col-sm-12 enter_section">
+			<form action="/drinks/create" method="POST">
+				<input type="text" class="form-control" name="drink_name" value="" id="enter_text" placeholder="Enter the Drink Name">
+                <input type="text" class="form-control" name="alcohol" value="" id="enter_text" placeholder="Enter the type of spirit (alcohol)">
+                <input type="text" class="form-control" name="ingredient_one" value="" id="enter_text" placeholder="Enter the 1st ingredient">
+                <input type="text" class="form-control" name="ingredient_two" value="" id="enter_text" placeholder="Enter the 2nd ingredient">
+                <input type="text" class="form-control" name="ingredient_three" value="" id="enter_text" placeholder="Enter the 3rd ingredient">
+                <input type="text" class="form-control" name="ingredient_four" value="" id="enter_text" placeholder="Enter the 4th ingredient">
+                <input type="text" class="form-control" name="drink_flavor" value="" id="enter_text" placeholder="Enter the Drink Flavor Profile. (ie Sweet, Salty, etc)">
+                <input type="text" class="form-control" name="drink_event" value="" id="enter_text" placeholder="Enter the Drink Event (lounging, brunch, boozing)">
+                <input type="text" class="form-control" name="rating" value="" id="enter_text" placeholder="Enter a Rating. (1-5 scale)">
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+      
+      
+
+<!--Text Area One-->
+<div class="form-group" id="taDrinkName">
+  <div>
+    <br>
+    <label for="exampleFormControlTextarea1">Add a Drink!</label>
+    <textarea class="form-control" id="taDrinkName1" rows="1" cols="3" placeholder="Enter the Drink Name"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taAlcohol">
+  <div>
+    <textarea class="form-control" id="taAlcohol1" rows="1" placeholder="Enter the type of spirit (alcohol)"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taIngOne">
+  <div>
+    <textarea class="form-control" id="taIng1" rows="1" placeholder="Enter the 1st ingredient"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taIngTwo">
+  <div>
+    <textarea class="form-control" id="taIng2" rows="1" placeholder="Enter the 2nd ingredient"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taIngThree">
+  <div>
+    <textarea class="form-control" id="taIng3" rows="1" placeholder="Enter the 3rd ingredient"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taIngFour">
+  <div>
+    <textarea class="form-control" id="taIng4" rows="1" placeholder="Enter the 4th ingredient"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taDrinkFlavor">
+  <div>
+    <textarea class="form-control" id="taDrinkFlavor2" rows="1" placeholder="Enter the Drink Flavor Profile. (ie Sweet, Salty, etc)"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taDrinkEvent">
+  <div>
+    <textarea class="form-control" id="taDrinkEvent2" rows="1" placeholder="Enter the Drink Event (lounging, brunch, boozing)"></textarea>
+</div>
+</div>
+
+<div class="form-group" id="taRating">
+  <div>
+    <textarea class="form-control" id="taRating1" rows="1" placeholder="Enter a Rating. (1-5 scale)"></textarea>
+</div>
+</div>
+
+<div class="container" id="formSnack">
+    <br>
+	<div class="row">
+		<div class="col-sm-12 enter_section">
+			<form action="/snacks/create" method="POST">
+				<input type="text" class="form-control" name="snack_name" value="" id="enter_text" placeholder="Enter the Snack Name">
+                <input type="text" class="form-control" name="snack_flavor" value="" id="enter_text" placeholder="Enter the Drink Flavor Profile. (ie Sweet, Salty, etc)">
+                <input type="text" class="form-control" name="DrinkId" value="" id="enter_text" placeholder="What Drink number does this Snack pair well with?">
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+    
+    
+
+
+
+    
+    
+
+<!--Text Area Three-->
+<div class="form-group">
+<div id="taThoughts">
+<label for="exampleFormControlTextarea1">Share Your Thoughts!</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+</div>
+
+
+<!--SUBMIT BUTTON-->
+<!--<button type="submit" class="btn btn-primary mb-2">Submit</button>-->
+
+
+<!--END OF CONTAINER-->
+</div>
+
+

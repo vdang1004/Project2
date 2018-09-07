@@ -1,0 +1,75 @@
+
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+      </div>
+    
+      <div class="salud"> <center><p>Drinks!</p>
+        <p class="lead">All Drinks Displayed Here!</p></center>
+      </div>
+    
+</div>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/alldrinks">Drinks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/allsnacks">Snacks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/form">B.Y.O...</a>
+  </li>
+</ul>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Spirit</th>
+      <th scope="col">Ingredient 1</th>
+      <th scope="col">Ingredient 2</th>
+      <th scope="col">Ingredient 3</th>
+      <th scope="col">Ingredient 4</th>
+      <th scope="col">Flavor</th>
+      <th scope="col">Event</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each drink}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.drink_name}}</td>
+      <td>{{this.alcohol}}</td>
+      <td>{{this.ingredient_one}}</td>
+      <td>{{this.ingredient_two}}</td>
+      <td>{{this.ingredient_three}}</td>
+      <td>{{this.ingredient_four}}</td>
+      <td>{{this.drink_flavor}}</td>
+      <td>{{this.drink_event}}</td>
+    </tr>
+    {{/each}} 
+    <tr>
+      <th scope="row"> </th>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+  </table>  
+
+  <div class="footer">
+    <a href="./form" class="col-xs-6 col-sm-6 col-lg-6">
+    <button type="button" class="btn btn-info">We Want to Hear From You!</button>
+
+

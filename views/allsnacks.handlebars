@@ -1,0 +1,58 @@
+
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+      </div>
+    
+      <div class="salud"> <center><p>Snacks!</p>
+        <p class="lead">All Snacks Displayed Here!</p></center>
+      </div>
+
+</div>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/alldrinks">Drinks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/allsnacks">Snacks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/form">B.Y.O...</a>
+  </li>
+</ul>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Flavor Profile</th>
+      <th scope="col">Pairs w/ Drink #</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each snack}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.snack_name}}</td>
+      <td>{{this.snack_flavor}}</td>
+      <td>{{this.DrinkId}}</td>
+    </tr>
+    {{/each}} 
+    <tr>
+      <th scope="row"> </th>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+  </table>  
+
+  
+  <div class="footer">
+    <a href="./form" class="col-xs-6 col-sm-6 col-lg-6">
+    <button type="button" class="btn btn-info">We Want to Hear From You!</button>
